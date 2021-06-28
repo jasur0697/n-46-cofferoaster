@@ -1,0 +1,146 @@
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"),
+  url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces9pt-Black.woff2") format("woff2"),
+  url("../fonts/Fraunces9pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"),
+  url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow" "Arial", sans-serif;
+  background-color: #FEFCF7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.site-header__logo-link {
+  text-decoration: none;
+  display: block;
+  flex-shrink: 0;
+}
+
+.site-header__button {
+  background-color: transparent;
+  border: none;
+  background-image: url(../images/hamburger-menu-icon.svg);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.site-nav {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -20px;
+  right: -20px;
+  padding: 40px 20px;
+  text-align: center;
+  height: calc(100vh - 90px);
+  overflow: auto;
+  background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+}
+
+.site-header--open .site-header__button {
+  background-image: url(../images/close-button.svg);
+}
+
+.site-header--open .site-nav {
+  display: block;
+}
+
+.site-nav__list {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: #333D4B;
+  font-size:24px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
