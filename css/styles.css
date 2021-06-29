@@ -112,7 +112,7 @@ img {
   text-align: center;
   height: calc(100vh - 90px);
   overflow: auto;
-  background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 30.94%);
 }
 
 .site-header--open .site-header__button {
@@ -148,45 +148,46 @@ img {
 
 .hero {
   background-image: url(../images/her-mobile-bg.jpg);
-  background-repeat:no-repeat ;
-  background-size: contain;
-  background-position:center;
+  background-repeat:no-repeat;
+  background-position: center;
   width: 100%;
-  max-width: 327px;
-  height:auto ;
+  height:500px;
+  overflow: auto;
+  border-radius: 10px;
 }
 
 .hero-container {
+  
   width: 279px;
-  padding-left: 0;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
 }
 
 .hero-heading {
-  font-family: "Fraunces";
+  font-family: "Fraunces" 9pt;
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
-  color: #FEFCF7;
-  margin-bottom: 24px;
   font-size: 40px;
   line-height: 40px;
+  color: #FEFCF7;
+  text-align: center;
+  margin-bottom:24px ;
+  margin-top: 0;
 }
 
 .hero-desc {
   font-family: "Barlow";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  color: #FEFCF7;
-  mix-blend-mode: normal;
+  font-size: 15px;
+  line-height: 25px;
   opacity: 0.8;
-  margin-top: 32px;
-  margin-bottom: 56px;
-  width: 445px;
+  margin-bottom: 39px;
+  width: 279px;
+  color: #FEFCF7;
+  text-align: center;
+  margin-top: 0;
 }
 
 .hero-link {
@@ -207,17 +208,14 @@ img {
   padding: 15px 30px;
 }
 
-
 .hero-link:hover {
   background-color: #66D2CF;
 }
 
 
+@media only screen and (min-width: 480px) {
 
 }
-
-
-
 
 @media only screen and (min-width: 768px) {
 
@@ -225,7 +223,6 @@ img {
     background-image: url(../images/hero-tab.jpg);
     background-repeat:no-repeat ;
     width: 100%;
-    max-width: 1280px;
     height: auto;
   }
 
@@ -234,6 +231,9 @@ img {
     padding-top:104px;
     padding-left: 58px;
     padding-bottom:103px ;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .hero-heading {
@@ -291,6 +291,8 @@ img {
 .hero {
   background-image: url(../images/hero-photo.jpg);
   background-repeat:no-repeat ;
+  background-size: contain;
+  background-position: center;
   width: 100%;
   height: auto;
 }
