@@ -75,7 +75,6 @@ img {
 }
 
 
-
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -151,7 +150,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 24px;
+  padding: 100px 0px;
   background-image: url(../images/her-mobile-bg.jpg);
   background-repeat:no-repeat;
   border-radius: 10px;
@@ -328,8 +327,8 @@ img {
 
 
 @media only screen and (min-width: 1075px) {
- auto;
-}
+ 
+
 
   .hero-container {
     text-align: start;
