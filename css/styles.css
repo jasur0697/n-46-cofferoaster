@@ -265,6 +265,134 @@ img {
   margin: 0 auto;
 }
 
+
+/* FEATURES */
+
+
+
+.features__top {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background-color:#2C343E ;
+  text-align: center;
+  color: #fff ;
+  text-align: center;
+}
+
+.features__heading {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #FEFCF7;
+
+}
+
+
+
+.features__info {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.features__top::after {
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 630px;
+  content: "";
+  
+}
+
+.features__list {
+  position: relative;
+  list-style-type: none;
+  padding:0 ;
+  z-index: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.features__item {
+  min-height: 380px;
+  background-color: #0E8784;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  padding-bottom: 51px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.feature__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FEFCF7;
+  position: relative;
+  z-index: 1
+  ;
+}
+
+
+.feature-coffee::before {
+  background-image: url(../images/coffee-icon.svg);
+  content: "";
+  display: block;
+  width: 71px;
+  height: 71px;
+}
+
+.feature-gift::before {
+  background-image: url(../images/gift-icon.svg);
+  content: "";
+  display: block;
+  width: 71px;
+  height: 71px;
+}
+
+.feature-car::before {
+  background-image: url(../images/car-icon.svg);
+  content: "";
+  display: block;
+  width: 71px;
+  height: 71px;
+}
+
+.feature__description {
+  width: 212px;
+  text-align: center;
+  font-family:"Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+
 @media only screen and (min-width: 540px) {
 
   .collection__heading {
@@ -508,8 +636,6 @@ img {
   }
 
 }
-
-
 
 
 @media only screen and (min-width: 1150px) {
